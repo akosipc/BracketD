@@ -1,5 +1,19 @@
 @import 'mixins';
 
+header.header {
+
+  border-top: 4px solid #EEEE00;
+  @include box-shadow(0px 2px 10px 1px #333);
+
+  .brand {
+
+    color: #FFF;
+    font-weight: bold;
+
+  }//class brand
+
+}//element header class header
+
 section#pages-index {
   
   header {
