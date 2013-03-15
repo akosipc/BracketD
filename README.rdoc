@@ -14,4 +14,9 @@ The name of the project is a reference to "Bracket D" as quoted from an article 
 
 == Website
 
-http://bracketd.herokuapp.com
+Visit @ http://bracketd.herokuapp.com
+
+== Created by
+@akosipc
+@rafaeloca
+@pageman
