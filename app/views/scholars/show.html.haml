@@ -6,7 +6,7 @@
   .row
     .twelve.mobile-one.columns#main
       .four.mobile-two.columns
-        = image_tag @scholar.avatar_path_url(:wide)
+        = image_tag @scholar.avatar_path_url(:wide), class: 'profile'
       .eight.mobile-two.columns
         %h4= "Progress since #{@scholar.created_at.strftime('%B %d, %Y')}"
         %hr

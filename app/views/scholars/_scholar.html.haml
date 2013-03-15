@@ -1,5 +1,5 @@
 = link_to scholar_path(scholar) do
-  = image_tag scholar.avatar_path_url(:wide)
+  = image_tag(scholar.avatar_path_url(:wide), class: 'profile')
 
 .nice.round.progress.success.twelve
   %span.meter{style: "width:#{meter_length(scholar)}%"}

@@ -14,7 +14,7 @@ a.fb_share {
 
 section#scholar-show {
 
-  img {
+  img.profile {
     width: 100%;
     @include border-radius(5px);
     height: 100%;
@@ -41,8 +41,9 @@ section#scholar-show {
   }//element h4
 
   .separator {
-    margin: 25px 0px;
+    margin: 25px auto;;
     border: 1px dotted #CCC;
+    text-align: center;
   }//class separator
 
   #detail {

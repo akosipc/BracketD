@@ -7,7 +7,7 @@ section#pages-index {
     font-weight: bold;
   }//element small
 
-  img { 
+  img.profile { 
     width: 100%; 
     @include border-radius(5px);
     margin-bottom: 20px;
