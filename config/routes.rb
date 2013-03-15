@@ -1,7 +1,7 @@
 BracketD::Application.routes.draw do
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
-  devise_for :users
+  devise_for :users, skip: [:registrations, :passwords]
 
   root to: 'pages#index'
 
