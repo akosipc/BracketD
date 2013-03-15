@@ -16,7 +16,7 @@ class Scholar < ActiveRecord::Base
 
   def paid_amount
     amount = 0
-    self.pledges.paid.collect(&:amount).map{|v| amount += v.to_i }
+    self.pledges.collect(&:amount).map{|v| amount += v.to_i }
     return amount
   end
 end

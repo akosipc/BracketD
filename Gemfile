@@ -14,6 +14,7 @@ gem 'psych'
 gem 'haml-rails'
 gem 'inherited_resources'
 gem 'google-webfonts'
+gem 'activemerchant'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
