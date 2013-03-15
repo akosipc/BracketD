@@ -77,6 +77,8 @@ GEM
       railties (>= 3.1.1)
       sass-rails (>= 3.1.1)
     fssm (0.2.10)
+    google-webfonts (0.1.2)
+      actionpack (>= 3.0.0)
     haml (4.0.0)
       tilt
     haml-rails (0.4)
@@ -213,6 +215,7 @@ DEPENDENCIES
   devise
   facebook_share
   foundation-icons-sass-rails
+  google-webfonts
   haml-rails
   humane-rails
   inherited_resources

@@ -22,6 +22,7 @@ group :assets do
   gem 'zurb-foundation'
   gem 'foundation-icons-sass-rails'
   gem 'humane-rails'
+  gem 'google-webfonts'
 end
 
 group :development do
