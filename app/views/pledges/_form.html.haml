@@ -12,6 +12,16 @@
 
 .row
   .three.columns
+    = f.label :amount, class: 'right inline'
+  .two.columns.no-padding-left
+    %span.prefix PHP
+  .five.columns.no-padding
+    = f.text_field :amount, placeholder: 'Amount in PHP, no need to put commas'
+  .two.columns.no-padding-right
+    %span.postfix .00
+
+.row
+  .three.columns
     = f.label :email, class: 'right inline'
   .nine.columns
     = f.text_field :email, placeholder: 'Email'

@@ -37,3 +37,15 @@
 textarea {
   resize: none !important;
 }//element textarea
+
+.no-padding-left {
+  padding: 0px 0px 0px 13px !important;
+}//class no-padding-left
+
+.no-padding-right {
+  padding: 0px 13px 0px 0px !important;
+}//class no-padding-right
+
+.no-padding {
+  padding: 0px !important;
+}//class no-padding

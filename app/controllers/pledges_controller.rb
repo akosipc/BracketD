@@ -1,7 +1,7 @@
 class PledgesController < ApplicationController
   inherit_resources
 
-  belongs_to :scholars
+  belongs_to :scholar
 
   def index
     @pledge = Pledge.new
@@ -12,8 +12,8 @@ class PledgesController < ApplicationController
 
   def create
     create! do |success, failure|
-      success.html{redirect_to scholar_pledges(params[:scholar_id]), notice: 'Successfully Pledged' }
-      failure.html{render 'new', alert: 'Errors were found' }
+      success.html{redirect_to scholar_path(params[:scholar_id]), notice: 'Successfully Pledged' }
+      failure.html{redirect_to scholar_path(params[:scholar_id]), notice: 'Error in Pledge' }
     end
   end
 
@@ -22,8 +22,8 @@ class PledgesController < ApplicationController
 
   def update
     update! do |success, failure|
-      success.html{redirect_to scholar_pledges(params[:scholar_id]), notice: 'Successfully Pledged' }
-      failure.html{render 'edit', alert: 'Errors were found' }
+      success.html{redirect_to scholar_path(params[:scholar_id]), notice: 'Successfully Pledged' }
+      failure.html{redirect_to scholar_path(params[:scholar_id]), alert: 'Error in Pledge' }
     end
   end
 
