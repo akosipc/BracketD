@@ -12,5 +12,8 @@
 <%= render 'layouts/messages' %>
 <%= yield %>
 <%= render 'layouts/footer' %>
+<% if @scholar.present? %>
+  <%= render 'pledges/modal' %>
+<% end %>
 </body>
 </html>

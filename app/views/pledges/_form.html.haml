@@ -1,0 +1,34 @@
+.row
+  .three.columns
+    = f.label :first_name, class: 'right inline'
+  .nine.columns
+    = f.text_field :first_name, placeholder: 'First Name'
+
+.row
+  .three.columns
+    = f.label :last_name, class: 'right inline'
+  .nine.columns
+    = f.text_field :last_name, placeholder: 'Last Name'
+
+.row
+  .three.columns
+    = f.label :email, class: 'right inline'
+  .nine.columns
+    = f.text_field :email, placeholder: 'Email'
+
+.row
+  .three.columns
+    = f.label :contact_number, class: 'right inline'
+  .nine.columns
+    = f.text_field :contact_number, placeholder: 'Contact Number'
+
+.row
+  .three.columns
+    = f.label :message, class: 'right inline'
+  .nine.columns
+    = f.text_area :message, placeholder: 'Message', rows: 5
+
+.two.columns.centered
+  .centerify
+    = f.submit "Pledge!", class: 'button radius'
+

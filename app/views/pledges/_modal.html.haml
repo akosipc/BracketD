@@ -1,0 +1,6 @@
+#pledge-modal.reveal-modal.large
+  .centerify
+    %h2= 'Pledge Form'
+  = form_for [@scholar, @scholar.pledges.build] do |f|
+    = render 'pledges/form', f: f
+  %a.close-reveal-modal= "&#215;".html_safe
