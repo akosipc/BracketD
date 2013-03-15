@@ -6,6 +6,8 @@ class Scholar < ActiveRecord::Base
   scope :funded, where(status: 'Funded')
   scope :active, where(status: 'Active')
 
+  has_many :pledges
+
   def full_name
     "#{self.first_name} #{self.last_name}"
   end
