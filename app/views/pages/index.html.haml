@@ -1,0 +1,13 @@
+%section#pages-index
+  .row
+    .twelve.mobile-one.columns
+      - @scholars.each do |scholar|
+        .four.mobile-two.columns
+          = render 'scholars/scholar', scholar: scholar
+    .clearfix
+    .right
+      -#= link_to 'View all ->', scholars_path
+
+  .row
+    = image_tag 'separator.png', class: 'separator'
+

@@ -1,0 +1,5 @@
+@mixin box-shadow($args) { -webkit-box-shadow: $args; -moz-box-shadow: $args; box-shadow: $args; }
+@mixin border-radius($pixels) { -webkit-border-radius: $pixels; -moz-border-radius: $pixels; border-radius: $pixels; }
+@mixin text-shadow($args) { text-shadow: $args; }
+@mixin transition($args) { -webkit-transition: $args; -moz-transition: $args; -ms-transition: $args; -o-transition: $args; transition: $args; }
+

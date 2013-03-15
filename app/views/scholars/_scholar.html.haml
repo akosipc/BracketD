@@ -1,0 +1,18 @@
+= link_to scholar_path(scholar) do
+  = image_tag scholar.avatar_path_url(:wide)
+
+.nice.round.progress.success.twelve
+  %span.meter
+
+.centerify
+  %span
+    = scholar.amount.to_s + "0 to go"
+    |
+    = scholar.pledges.paid.count.to_s + " Donors"
+
+%hr
+= link_to scholar_path(scholar) do
+  %h4= scholar.full_name
+%p= scholar.description[0..100] + '...'
+.centerify
+  = link_to 'Read more', scholar_path(scholar), class: 'button radius full'

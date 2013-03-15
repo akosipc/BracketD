@@ -73,6 +73,9 @@ GEM
     font-awesome-sass-rails (3.0.2.1)
       railties (>= 3.1.1)
       sass-rails (>= 3.1.1)
+    foundation-icons-sass-rails (2.0.0)
+      railties (>= 3.1.1)
+      sass-rails (>= 3.1.1)
     fssm (0.2.10)
     haml (4.0.0)
       tilt
@@ -209,6 +212,7 @@ DEPENDENCIES
   compass-rails
   devise
   facebook_share
+  foundation-icons-sass-rails
   haml-rails
   humane-rails
   inherited_resources

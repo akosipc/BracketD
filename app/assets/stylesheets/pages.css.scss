@@ -1,3 +1,34 @@
-// Place all the styles related to the Pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'mixins';
+
+section#pages-index {
+
+  img { 
+    width: 100%; 
+    @include border-radius(5px);
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid rgba(32, 32, 32, 0.1);
+
+    &.separator {
+      height: initial;
+      border: 0px;
+    }//class separator
+
+  }//element img
+
+  .four {
+    width: 31%;
+    margin: 0px 10px;
+    border: 1px solid #CCC;
+    background: rgba(222, 222, 222, 0.5);
+    padding: 15px;
+    @include border-radius(10px);
+  }//class four
+
+  a {
+    h4 { &:hover { text-decoration: underline; } }//element h4 selector hover
+  }//element a
+
+  .right { margin: 15px 20px; }//class right
+
+}//element section id pages-index
