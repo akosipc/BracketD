@@ -1,5 +1,5 @@
 class Scholar < ActiveRecord::Base
-  attr_accessible :first_name, :last_name, :description, :age, :school, :avatar_path, :status, :amount
+  attr_accessible :first_name, :last_name, :description, :age, :school, :avatar_path, :status, :amount, :avatar_path_cache, :pledge_ids
 
   mount_uploader :avatar_path, AvatarUploader
 

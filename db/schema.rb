@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20130315142752) do
     t.string   "amount"
     t.string   "status",         :default => "Unpaid"
     t.text     "message"
+    t.integer  "scholar_id"
     t.datetime "created_at",                           :null => false
     t.datetime "updated_at",                           :null => false
   end
