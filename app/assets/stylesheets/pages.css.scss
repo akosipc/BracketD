@@ -1,6 +1,10 @@
 @import 'mixins';
 
 section#pages-index {
+  
+  header {
+    text-decoration: underline;
+  }//element header
 
   small {
     font-size: 12px;
