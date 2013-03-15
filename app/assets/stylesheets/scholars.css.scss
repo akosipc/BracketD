@@ -1,5 +1,17 @@
 @import 'mixins';
 
+a.fb_share {
+
+  img {
+
+    width: initial !important;
+    height: initial !important;
+    border: 0px !important;
+
+  }//element img
+
+}//element a class fb_share
+
 section#scholar-show {
 
   img {
@@ -7,6 +19,7 @@ section#scholar-show {
     @include border-radius(5px);
     height: 100%;
     border: 1px solid rgba(32, 32, 32, 0.1);
+
   }//element img
 
   #main {
@@ -18,14 +31,14 @@ section#scholar-show {
   }//class twelve id main
 
   .progress {
-    margin: 25px auto;
+    margin: 10px auto;
   }//class progress
 
   h4 {
     font-weight: bold;
-    margin: 25px 0px;
+    margin: 15px 0px;
     font-size: 36px;
-  }//element hr
+  }//element h4
 
   .separator {
     margin: 25px 0px;
@@ -44,4 +57,12 @@ section#scholar-show {
     }//element p
   }
 
+  .four {
+    margin: 10px 0px;
+  }//class four
+
 }//element section id scholar-show
+
+.social {
+  margin-top: 25px;
+}//class shared
