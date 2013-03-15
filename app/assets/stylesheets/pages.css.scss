@@ -43,7 +43,11 @@ section#pages-index {
 }//element section id pages-index
 
 footer#pages-index {
-  
+ 
+  padding-bottom: 50px;
+
+  border-top: 1px solid #AAA;
+  @include box-shadow(0px 0px 10px 1px #999);
 
   small {
     font-size: 12px;
