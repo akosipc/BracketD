@@ -13,6 +13,7 @@ gem 'cloudinary'
 gem 'psych'
 gem 'haml-rails'
 gem 'inherited_resources'
+gem 'google-webfonts'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -22,7 +23,6 @@ group :assets do
   gem 'zurb-foundation'
   gem 'foundation-icons-sass-rails'
   gem 'humane-rails'
-  gem 'google-webfonts'
 end
 
 group :development do
