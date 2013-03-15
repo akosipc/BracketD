@@ -13,4 +13,10 @@ class Scholar < ActiveRecord::Base
   def full_name
     "#{self.first_name} #{self.last_name}"
   end
+
+  def paid_amount
+    amount = 0
+    self.pledges.paid.collect(&:amount).map{|v| amount += v.to_i }
+    return amount
+  end
 end

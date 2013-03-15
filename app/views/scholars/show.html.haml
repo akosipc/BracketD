@@ -13,9 +13,9 @@
 
         .centerify
           .nice.round.progress.success.eight
-            %span.meter
+            %span.meter{style: "width:#{meter_length(@scholar)}%"}
 
-          %h4= "PHP " + @scholar.amount.to_s + "0 TO GO"
+          %h4= "PHP " + (@scholar.amount.to_f - @scholar.paid_amount.to_f).to_s + "0 TO GO"
           %hr
 
           = link_to 'Pledge', '#', class: 'button full radius', :'data-reveal-id' => 'pledge-modal'

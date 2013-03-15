@@ -2,11 +2,11 @@
   = image_tag scholar.avatar_path_url(:wide)
 
 .nice.round.progress.success.twelve
-  %span.meter
+  %span.meter{style: "width:#{meter_length(scholar)}%"}
 
 .centerify
   %small
-    = scholar.amount.to_s + "0 to go"
+    = (scholar.amount.to_f - scholar.paid_amount.to_f).to_s + "0 to go"
     |
     = scholar.pledges.paid.count.to_s + " Donors"
 
