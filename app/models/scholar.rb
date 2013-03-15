@@ -1,6 +1,8 @@
 class Scholar < ActiveRecord::Base
   attr_accessible :first_name, :last_name, :description, :age, :school, :avatar_path, :status, :amount
 
+  mount_uploader :avatar_path, AvatarUploader
+
   validates_presence_of :first_name, :last_name, :description, :age, :school, :status
 
   scope :funded, where(status: 'Funded')
