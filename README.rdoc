@@ -1,7 +1,7 @@
 == Welcome to BracketD
 
 BracketD is a result of a less-than-24-hours hackathon by @akosipc via conversations with @rafaeloca & @pageman .
-The name of the project is a reference to "Bracket D" as quoted from an article in Rapppler:
+The name of the project is a reference to "Bracket D" as quoted from an article in Rapppler (http://www.rappler.com/move-ph/23894-up-student-kills-self-unpaid-tuition):
 
 * Students under Bracket A pay P1,500 per unit while Bracket B students pay P1,000 per unit. 
 * Brackets C and D students pay P600 and P300 per unit, respectively. 
@@ -43,4 +43,4 @@ The Initial Developer of the Original Code is @akosipc .
 
 All portions of the code written by @akosipc are Copyright (c) 2013. All Rights Reserved.
 
-Contributors are @rafaeloca & @pageman.
+Contributors are @rafaeloca & @pageman .
