@@ -1,3 +1,47 @@
-// Place all the styles related to the Scholars controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'mixins';
+
+section#scholar-show {
+
+  img {
+    width: 100%;
+    @include border-radius(5px);
+    height: 100%;
+    border: 1px solid rgba(32, 32, 32, 0.1);
+  }//element img
+
+  #main {
+    background: #EFF0F0;
+    margin: 5px 0px;
+    border: 1px solid #BCBCBD;
+    @include border-radius(7px);
+    padding: 15px 0px;
+  }//class twelve id main
+
+  .progress {
+    margin: 25px auto;
+  }//class progress
+
+  h4 {
+    font-weight: bold;
+    margin: 25px 0px;
+    font-size: 36px;
+  }//element hr
+
+  .separator {
+    margin: 25px 0px;
+    border: 1px dotted #CCC;
+  }//class separator
+
+  #detail {
+    background: #FFFFFF;
+    border: 1px solid #C2C3C2;
+    padding: 25px;
+    @include box-shadow(0 1px 3px #CDCFCE);
+    @include border-radius(5px);
+
+    p {
+      margin-top: 5px;
+    }//element p
+  }
+
+}//element section id scholar-show

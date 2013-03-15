@@ -1,0 +1,13 @@
+.right
+  = tweet_button(text: "Help a scholar now!", 
+                 via: 'BracketD',
+                 count: 'none',
+                 hashtags: 'BracketD')
+
+  = link_to "#", class: 'fb_share' do
+    = image_tag 'fb-share.png'
+
+  = facebook_share_once(name: "Help out scholar now at BracketD!",
+                        link: url_for(controller: 'scholars', action: 'show', id: @scholar.id, only_path: false),
+                        description: "#{@scholar.description}",
+                        picture: "#{@scholar.avatar_path_url}")

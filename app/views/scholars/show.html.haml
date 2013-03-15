@@ -1,0 +1,46 @@
+- provide :title, "Fund #{@scholar.full_name} from #{@scholar.school}"
+
+.row
+  = render 'shared/social'
+
+%section#scholar-show
+  .row
+    .twelve.mobile-one.columns#main
+      .four.mobile-two.columns
+        = image_tag @scholar.avatar_path_url(:wide)
+      .eight.mobile-two.columns
+        %h6= "Progress since #{@scholar.created_at.strftime('%B %d, %Y')}"
+
+        .centerify
+          .nice.round.progress.success.eight
+            %span.meter
+
+          %h4= "PHP " + @scholar.amount.to_s + "0 TO GO"
+          %hr
+
+          = link_to 'Pledge', '#', class: 'button full radius'
+
+      .clearfix
+      .separator
+      
+      .ten.columns.mobile-one.columns.offset-by-one#detail
+        .three.columns
+          %label.left.inline
+            Scholar's Name:
+        .nine.columns
+          %p= @scholar.full_name
+        .three.columns
+          %label.left.inline
+            Age:
+        .nine.columns
+          %p= @scholar.age
+        .three.columns
+          %label.left.inline
+            School:
+        .nine.columns
+          %p= @scholar.school
+        .three.columns
+          %label.left.inline
+            Description:
+        .nine.columns
+          %p= @scholar.description
