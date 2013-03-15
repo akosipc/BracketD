@@ -2,6 +2,11 @@
 
 section#pages-index {
 
+  small {
+    font-size: 12px;
+    font-weight: bold;
+  }//element small
+
   img { 
     width: 100%; 
     @include border-radius(5px);
