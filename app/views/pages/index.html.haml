@@ -2,6 +2,9 @@
 
 %section#pages-index
   .row
+    = image_tag 'separator.png', class: 'separator'
+
+  .row
     .twelve.mobile-one.columns
       - @scholars.each do |scholar|
         .four.mobile-two.columns
@@ -10,6 +13,4 @@
     .right
       -#= link_to 'View all ->', scholars_path
 
-  .row
-    = image_tag 'separator.png', class: 'separator'
 
