@@ -21,6 +21,9 @@ Visit @ http://bracketd.herokuapp.com
 @rafaeloca
 @pageman
 
+== Contributors
+@kendaganio
+
 == License
 
 This work is licensed under the Common Public Attribution License Version 1.0 (CPAL-1.0)
