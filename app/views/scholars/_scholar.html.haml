@@ -8,7 +8,7 @@
   %small
     = number_with_precision((scholar.amount.to_f - scholar.paid_amount.to_f), delimiter: ',', precision: 2).to_s + " to go"
     |
-    = scholar.pledges.count.to_s + " Donors"
+    = scholar.pledges.count.to_s + " Donor(s)"
 
 %hr
 = link_to scholar_path(scholar) do
