@@ -35,3 +35,19 @@ BracketD::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 end
+
+ActiveMerchant::Billing::Base.mode = :test
+
+PAYPAL_GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
+  login: 'sellp_1361269836_biz_api1.badsectorlabs.com',
+  password: '1361269870',
+  signature: 'AKhTJ0d35-BGqvOFvFn4gwMtPciCASnz2iJZgI-tvPunDnzbqpggdt88',
+  default_currency: "PHP"
+)
+
+EXPRESS_GATEWAY = ActiveMerchant::Billing::PaypalExpressGateway.new(
+  login: 'sellp_1361269836_biz_api1.badsectorlabs.com',
+  password: '1361269870',
+  signature: 'AKhTJ0d35-BGqvOFvFn4gwMtPciCASnz2iJZgI-tvPunDnzbqpggdt88',
+  default_currency: "PHP"
+)

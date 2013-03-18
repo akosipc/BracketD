@@ -8,4 +8,10 @@ BracketD::Application.routes.draw do
   resources :scholars, only: [:index, :show] do
     resources :pledges, only: [:create, :update]
   end
+
+  resources :pledges, only: [] do
+    resources :transactions, only: [:index] do
+
+    end
+  end
 end

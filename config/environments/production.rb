@@ -65,3 +65,19 @@ BracketD::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 end
+
+ActiveMerchant::Billing::Base.mode = :test
+
+PAYPAL_GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
+  login: 'sellp_1361269836_biz_api1.badsectorlabs.com',
+  password: '1361269870',
+  signature: 'AKhTJ0d35-BGqvOFvFn4gwMtPciCASnz2iJZgI-tvPunDnzbqpggdt88',
+  default_currency: "PHP"
+)
+
+EXPRESS_GATEWAY = ActiveMerchant::Billing::PaypalExpressGateway.new(
+  login: 'sellp_1361269836_biz_api1.badsectorlabs.com',
+  password: '1361269870',
+  signature: 'AKhTJ0d35-BGqvOFvFn4gwMtPciCASnz2iJZgI-tvPunDnzbqpggdt88',
+  default_currency: "PHP"
+)
