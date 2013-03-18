@@ -46,4 +46,4 @@ The Initial Developer of the Original Code is @akosipc .
 
 All portions of the code written by @akosipc are Copyright (c) 2013. All Rights Reserved.
 
-Contributors are @rafaeloca & @pageman .
+Contributors are @rafaeloca @pageman @kendaganio .
