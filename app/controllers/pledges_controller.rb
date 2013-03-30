@@ -9,7 +9,7 @@ class PledgesController < ApplicationController
 
   def create
     create! do |success, failure|
-      success.html{redirect_to pledge_transactions_path(params[:scholar_id]), notice: 'Successfully Pledged' }
+      success.html{redirect_to scholar_path(params[:scholar_id]), notice: 'Successfully Pledged' }
       failure.html{redirect_to scholar_path(params[:scholar_id]), notice: 'Error in Pledge' }
     end
   end
