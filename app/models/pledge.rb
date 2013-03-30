@@ -9,6 +9,7 @@ class Pledge < ActiveRecord::Base
   scope :unpaid, where(status: 'Unpaid')
 
   belongs_to :scholar
+  has_one :transaction
 
 end
 

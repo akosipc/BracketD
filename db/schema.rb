@@ -68,6 +68,7 @@ ActiveRecord::Schema.define(:version => 20130317155337) do
     t.string   "cc_country"
     t.string   "cc_zip"
     t.string   "payer_id"
+    t.integer  "pledge_id"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end

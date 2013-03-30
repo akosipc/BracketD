@@ -17,6 +17,8 @@ class CreateTransactions < ActiveRecord::Migration
       t.string :cc_zip
       t.string :payer_id
 
+      t.integer :pledge_id
+
       t.timestamps
     end
   end

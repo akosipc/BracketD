@@ -11,7 +11,7 @@
     = scholar.pledges.paid.count.to_s + " Donor(s)"
   %br
   %p
-    %small= scholar.pledges.unpaid.count.to_s + " Pledgee(s)"
+    %small= scholar.pledges.paid.count.to_s + " Pledgee(s)"
 
 %hr
 = link_to scholar_path(scholar) do

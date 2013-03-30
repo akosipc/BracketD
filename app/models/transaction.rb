@@ -4,6 +4,8 @@ class Transaction < ActiveRecord::Base
 
   attr_accessor   :cc_number, :cc_expires_on, :cc_cvv
 
+  belongs_to :pledge
+
   def amount_in_cents
     self.denomination.to_i * 100
   end 

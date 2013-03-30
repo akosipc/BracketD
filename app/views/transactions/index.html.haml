@@ -1,1 +1,38 @@
 - provide :title, 'Thank you for pledging'
+
+:css 
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+.row
+  .twelve.columns
+    .centerify
+      %h3 Thank you pledging!
+
+  .row
+    .centerify
+      = image_tag 'separator.png', class: 'separator'
+  .twelve.columns
+    .four.columns
+      .centerify
+        %button.button
+          Pay via Credit Card
+    .four.columns
+      .centerify
+        %button.button
+          Pay via Paypal
+    .four.columns
+      .centerify
+        %button.button
+          Pay via Bank Deposit
+
+.row.hidden
+  .centerify
+    .twelve.columns#credit_card
+    .twelve.columns#paypal
+    .twelve.columns#bank_deposit
+
+
