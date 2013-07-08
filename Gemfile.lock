@@ -39,6 +39,7 @@ GEM
     activesupport (3.2.11)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    addressable (2.3.5)
     arel (3.0.2)
     aws_cf_signer (0.1.1)
     bcrypt-ruby (3.0.1)
@@ -50,6 +51,12 @@ GEM
     bootstrap-sass (2.3.0.0)
       sass (~> 3.2)
     builder (3.0.4)
+    capybara (2.1.0)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
     carrierwave (0.8.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -65,31 +72,59 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.1)
+    colorize (0.5.8)
     compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
     compass-rails (1.0.3)
       compass (>= 0.12.2, < 0.14)
+    database_cleaner (1.0.1)
     debug_inspector (0.0.2)
     devise (2.2.3)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
+    diff-lcs (1.2.4)
+    em-websocket (0.5.0)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.5.3)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
     facebook_share (0.0.6)
+    factory_girl (4.2.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.2.1)
+      factory_girl (~> 4.2.0)
+      railties (>= 3.0.0)
+    ffi (1.9.0)
     font-awesome-sass-rails (3.0.2.1)
       railties (>= 3.1.1)
       sass-rails (>= 3.1.1)
+    formatador (0.2.4)
     foundation-icons-sass-rails (2.0.0)
       railties (>= 3.1.1)
       sass-rails (>= 3.1.1)
     fssm (0.2.10)
+    gherkin-ruby (0.3.0)
     google-webfonts (0.1.2)
       actionpack (>= 3.0.0)
+    guard (1.8.1)
+      formatador (>= 0.2.4)
+      listen (>= 1.0.0)
+      lumberjack (>= 1.0.2)
+      pry (>= 0.9.10)
+      thor (>= 0.14.6)
+    guard-livereload (1.3.0)
+      em-websocket (>= 0.2.0)
+      guard (>= 1.5.0)
+      multi_json (~> 1.0)
+    guard-rspec (3.0.2)
+      guard (>= 1.8)
+      rspec (~> 2.13)
     haml (4.0.0)
       tilt
     haml-rails (0.4)
@@ -99,6 +134,7 @@ GEM
       railties (>= 3.1, < 4.1)
     has_scope (0.5.1)
     hike (1.2.1)
+    http_parser.rb (0.5.3)
     humane-rails (3.0.5.0.1.5)
     i18n (0.6.4)
     inherited_resources (1.3.1)
@@ -115,10 +151,18 @@ GEM
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
+    launchy (2.3.0)
+      addressable (~> 2.3)
+    listen (1.2.2)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      rb-kqueue (>= 0.2)
+    lumberjack (1.0.4)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    method_source (0.8.1)
     mime-types (1.21)
     modular-scale (1.0.6)
       compass (>= 0.12.1)
@@ -133,7 +177,10 @@ GEM
     orm_adapter (0.4.0)
     pg (0.14.1)
     polyglot (0.3.3)
-    psych (1.3.4)
+    pry (0.9.12.2)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
     quiet_assets (1.0.1)
       railties (~> 3.1)
     rack (1.4.5)
@@ -177,6 +224,11 @@ GEM
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
     rake (10.0.3)
+    rb-fsevent (0.9.3)
+    rb-inotify (0.9.0)
+      ffi (>= 0.5.0)
+    rb-kqueue (0.2.0)
+      ffi (>= 0.5.0)
     rdoc (3.12.2)
       json (~> 1.4)
     remotipart (1.0.5)
@@ -184,6 +236,21 @@ GEM
       railties (~> 3.1)
     rest-client (1.6.7)
       mime-types (>= 1.16)
+    rspec (2.14.0)
+      rspec-core (~> 2.14.0)
+      rspec-expectations (~> 2.14.0)
+      rspec-mocks (~> 2.14.0)
+    rspec-core (2.14.0)
+    rspec-expectations (2.14.0)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.14.1)
+    rspec-rails (2.14.0)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 2.14.0)
+      rspec-expectations (~> 2.14.0)
+      rspec-mocks (~> 2.14.0)
     safe_yaml (0.7.1)
     sass (3.2.7)
     sass-rails (3.2.6)
@@ -192,6 +259,20 @@ GEM
       tilt (~> 1.3)
     sassy-math (1.5)
       compass (~> 0.11)
+    shoulda (3.5.0)
+      shoulda-context (~> 1.0, >= 1.0.1)
+      shoulda-matchers (>= 1.4.1, < 3.0)
+    shoulda-context (1.1.4)
+    shoulda-matchers (2.2.0)
+      activesupport (>= 3.0.0)
+    slop (3.4.5)
+    spinach (0.8.3)
+      colorize (= 0.5.8)
+      gherkin-ruby (~> 0.3.0)
+    spinach-rails (0.2.1)
+      capybara (>= 2.0.0)
+      railties (>= 3)
+      spinach (>= 0.4)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -210,6 +291,8 @@ GEM
       multi_json (~> 1.0, >= 1.0.2)
     warden (1.2.1)
       rack (>= 1.0)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
     zurb-foundation (3.2.5)
       compass (>= 0.12.2)
       modular-scale (= 1.0.6)
@@ -223,24 +306,33 @@ DEPENDENCIES
   activemerchant
   better_errors
   binding_of_caller (~> 0.7.1)
+  capybara
   carrierwave
   cloudinary
   coffee-rails (~> 3.2.1)
   compass-rails
+  database_cleaner
   devise
   facebook_share
+  factory_girl_rails
   foundation-icons-sass-rails
   google-webfonts
+  guard
+  guard-livereload
+  guard-rspec
   haml-rails
   humane-rails
   inherited_resources
   jquery-rails
+  launchy
   pg
-  psych
   quiet_assets
   rails (= 3.2.11)
   rails_admin
+  rspec-rails
   sass-rails (~> 3.2.3)
+  shoulda
+  spinach-rails
   sqlite3
   tweet-button
   uglifier (>= 1.0.3)
