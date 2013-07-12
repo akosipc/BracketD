@@ -14,6 +14,7 @@ gem 'haml-rails'
 gem 'inherited_resources'
 gem 'google-webfonts'
 gem 'activemerchant'
+gem 'thin'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
