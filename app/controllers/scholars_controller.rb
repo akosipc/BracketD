@@ -1,7 +1,7 @@
 class ScholarsController < ApplicationController
 
   def index
-    @scholar = Scholar.all
+    @scholars = Scholar.all
   end
 
   def show

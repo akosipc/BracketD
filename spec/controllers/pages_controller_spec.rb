@@ -4,7 +4,7 @@ describe PagesController do
 
   describe "GET index" do
 
-    let(:scholar) { FactoryGirl.define(attributes_for :scholar) }
+    let(:scholar) { Scholar.create!(FactoryGirl.attributes_for :scholar) }
 
     before(:each) do
       get :index
