@@ -20,4 +20,17 @@ class Scholar < ActiveRecord::Base
     self.pledges.paid.collect(&:amount).map{|v| amount += v.to_i }
     amount
   end
+
+  rails_admin do
+    edit do
+      field :first_name
+      field :last_name
+      field :avatar_path
+      field :amount
+      field :school
+      field :age
+      field :description
+      field :status
+    end
+  end
 end

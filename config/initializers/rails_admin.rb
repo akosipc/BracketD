@@ -4,6 +4,8 @@
 RailsAdmin.config do |config|
 
 
+  config.yell_for_non_accessible_fields = false
+
   ################  Global configuration  ################
 
   # Set the admin name here (optional second array element will appear in red). For example:
@@ -64,16 +66,16 @@ RailsAdmin.config do |config|
 
   #   # Found columns:
 
-  #     configure :id, :integer 
-  #     configure :first_name, :string 
-  #     configure :last_name, :string 
-  #     configure :email, :string 
-  #     configure :contact_number, :string 
-  #     configure :amount, :string 
-  #     configure :status, :string 
-  #     configure :message, :text 
-  #     configure :created_at, :datetime 
-  #     configure :updated_at, :datetime 
+  #     configure :id, :integer
+  #     configure :first_name, :string
+  #     configure :last_name, :string
+  #     configure :email, :string
+  #     configure :contact_number, :string
+  #     configure :amount, :string
+  #     configure :status, :string
+  #     configure :message, :text
+  #     configure :created_at, :datetime
+  #     configure :updated_at, :datetime
 
   #   # Cross-section configuration:
 
@@ -109,21 +111,21 @@ RailsAdmin.config do |config|
 
   #   # Found associations:
 
-  #     configure :pledges, :has_many_association 
+  #     configure :pledges, :has_many_association
 
   #   # Found columns:
 
-  #     configure :id, :integer 
-  #     configure :first_name, :string 
-  #     configure :last_name, :string 
-  #     configure :age, :string 
-  #     configure :school, :string 
-  #     configure :avatar_path, :string 
-  #     configure :status, :string 
-  #     configure :description, :text 
-  #     configure :amount, :float 
-  #     configure :created_at, :datetime 
-  #     configure :updated_at, :datetime 
+  #     configure :id, :integer
+  #     configure :first_name, :string
+  #     configure :last_name, :string
+  #     configure :age, :string
+  #     configure :school, :string
+  #     configure :avatar_path, :string
+  #     configure :status, :string
+  #     configure :description, :text
+  #     configure :amount, :float
+  #     configure :created_at, :datetime
+  #     configure :updated_at, :datetime
 
   #   # Cross-section configuration:
 
@@ -163,22 +165,22 @@ RailsAdmin.config do |config|
 
   #   # Found columns:
 
-  #     configure :id, :integer 
-  #     configure :email, :string 
-  #     configure :password, :password         # Hidden 
-  #     configure :password_confirmation, :password         # Hidden 
-  #     configure :reset_password_token, :string         # Hidden 
-  #     configure :first_name, :string 
-  #     configure :last_name, :string 
-  #     configure :reset_password_sent_at, :datetime 
-  #     configure :remember_created_at, :datetime 
-  #     configure :sign_in_count, :integer 
-  #     configure :current_sign_in_at, :datetime 
-  #     configure :last_sign_in_at, :datetime 
-  #     configure :current_sign_in_ip, :string 
-  #     configure :last_sign_in_ip, :string 
-  #     configure :created_at, :datetime 
-  #     configure :updated_at, :datetime 
+  #     configure :id, :integer
+  #     configure :email, :string
+  #     configure :password, :password         # Hidden
+  #     configure :password_confirmation, :password         # Hidden
+  #     configure :reset_password_token, :string         # Hidden
+  #     configure :first_name, :string
+  #     configure :last_name, :string
+  #     configure :reset_password_sent_at, :datetime
+  #     configure :remember_created_at, :datetime
+  #     configure :sign_in_count, :integer
+  #     configure :current_sign_in_at, :datetime
+  #     configure :last_sign_in_at, :datetime
+  #     configure :current_sign_in_ip, :string
+  #     configure :last_sign_in_ip, :string
+  #     configure :created_at, :datetime
+  #     configure :updated_at, :datetime
 
   #   # Cross-section configuration:
 

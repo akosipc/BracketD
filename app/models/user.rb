@@ -6,4 +6,14 @@ class User < ActiveRecord::Base
   def full_name
     "#{self.first_name} #{self.last_name}"
   end
+
+  rails_admin do
+    edit do
+      field :email
+      field :password
+      field :password_confirmation
+      field :first_name
+      field :last_name
+    end
+  end
 end

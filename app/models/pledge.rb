@@ -11,5 +11,18 @@ class Pledge < ActiveRecord::Base
   belongs_to :scholar
   has_one :transaction
 
+  rails_admin do
+    edit do
+      field :first_name
+      field :last_name
+      field :email
+      field :contact_number
+      field :amount
+      field :status
+      field :message
+      field :scholar
+    end
+  end
+
 end
 
