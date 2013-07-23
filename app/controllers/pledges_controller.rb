@@ -3,10 +3,6 @@ class PledgesController < ApplicationController
 
   belongs_to :scholar
 
-  def index
-    @pledge = Pledge.new
-  end
-
   def create
     create! do |success, failure|
       success.html{redirect_to scholar_path(params[:scholar_id]), notice: 'Successfully Pledged' }
