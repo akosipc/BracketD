@@ -3,10 +3,11 @@ class Scholar < ActiveRecord::Base
 
   mount_uploader :avatar_path, AvatarUploader
 
-  validates_presence_of :first_name, :last_name, :description, :age, :school, :status
+  validates :first_name, :last_name, :description, :age, :school, :status, :amount, presence: true
+  validates :age, :amount, numericality: true
 
-  scope :funded, where(status: 'Funded')
-  scope :active, where(status: 'Active')
+  scope :funded, lambda { where(status: 'Funded') }
+  scope :active, lambda { where(status: 'Active') }
 
   has_many :pledges
 
@@ -17,6 +18,6 @@ class Scholar < ActiveRecord::Base
   def paid_amount
     amount = 0
     self.pledges.paid.collect(&:amount).map{|v| amount += v.to_i }
-    return amount
+    amount
   end
 end

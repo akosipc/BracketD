@@ -11,7 +11,6 @@ BracketD::Application.routes.draw do
 
   resources :pledges, only: [] do
     resources :transactions, only: [:index] do
-
     end
   end
 end
