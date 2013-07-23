@@ -1,5 +1,7 @@
 == Welcome to BracketD
 
+{<img src="https://travis-ci.org/akosipc/bracketd.png" />}[https://travis-ci.org/akosipc/bracketd]
+
 BracketD is a result of a less-than-24-hours hackathon by @akosipc via conversations with @rafaeloca & @pageman .
 The name of the project is a reference to "Bracket D" as quoted from an article in Rapppler (http://www.rappler.com/move-ph/23894-up-student-kills-self-unpaid-tuition):
 
