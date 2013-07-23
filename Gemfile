@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
+ruby '2.0.0', group: [:production]
 
 gem 'rails', '3.2.13'
 gem 'sqlite3', group: [:development, :test]
