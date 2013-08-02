@@ -5,7 +5,7 @@ BracketD::Application.routes.draw do
 
   root to: 'pages#index'
 
-  resources :scholars, only: [:index, :show] do
+  resources :scholars, only: [:index, :show, :destroy] do
     resources :pledges, only: [:create, :update]
   end
 
